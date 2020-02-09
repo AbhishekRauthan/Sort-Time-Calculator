@@ -1,5 +1,5 @@
-#include "sortalgo.hpp"
-#include "misc.hpp"
+#include "./sortlago/sortalgo.hpp"
+#include "../misc/misc.hpp"
 
 int main(int argc, char const *argv[])
 {
