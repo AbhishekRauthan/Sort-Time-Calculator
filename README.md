@@ -2,7 +2,8 @@
 
 # What is this project about?
 
-## This project is to record, analyse and develop my programming and logical skills using C++ 
+## This project is to record, analyse and develop my programming and logical skills using C++ and to contain all the algorithms that a programmer may need. also to add some functionality to it, their is a main file that calculate the time taken by an algorithm. and to execute it write the following command:
+ `g++ ./sortalgo/sortalgo.hpp ./sortalgo/heapsort.cpp ./sortalgo/insertionsort.cpp ../misc/misc.hpp ../misc/misc.cpp  main.cpp`
 
 # This project contains the following folders :-
  

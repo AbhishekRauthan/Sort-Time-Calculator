@@ -12,10 +12,11 @@ using namespace std;
  * vector<int> &arr is the vector that we are sending for sortfunction to act upon
 */
 
+
 int64_t performanceOf(void (*sortFunction)(vector<int> &), vector<int> &arr)
 {
   auto start = chrono::high_resolution_clock::now();                           // gets the time before the execution of sortfunction
-  (*sortFunction)(arr);                                                        // execution of the function
+  (*sortFunction)(arr);                                              // execution of the function
   auto finish = chrono::high_resolution_clock::now();                          // gets the time after the execution of sort function
   auto duration = chrono::duration_cast<chrono::milliseconds>(finish - start); // calculate the difference between the 2 in milliseconds(might change to microseconds)
   // .count() calculate and return the numerical value of the time

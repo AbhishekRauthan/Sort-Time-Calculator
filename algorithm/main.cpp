@@ -1,4 +1,4 @@
-#include "./sortlago/sortalgo.hpp"
+#include "./sortalgo/sortalgo.hpp"
 #include "../misc/misc.hpp"
 
 int main(int argc, char const *argv[])
