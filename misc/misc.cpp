@@ -6,14 +6,14 @@ using namespace std;
 /**
  * the following is the performance function that takes a function pointer(pointer to a    function) and a vector "arr" of type int
  -- THE FOLLOWING POINTS ARE TO TELL ABOUT THE SYNTAX AND WORKING OF THE FUNCTION --
- * int64_t tells that the function returns an int64_t(meaning int of 64 bits)
+ * float tells that the function returns an float(meaning int of 64 bits)
  * *sortfunction is the name of the function pointer, * here for the C++ pointer syntax
  * (vector<int> &) tells us the type and number of arguments the function pointer accepts
  * vector<int> &arr is the vector that we are sending for sortfunction to act upon
 */
 
 
-int64_t performanceOf(void (*sortFunction)(vector<int> &), vector<int> &arr)
+float performanceOf(void (*sortFunction)(vector<int> &), vector<int> &arr)
 {
   auto start = chrono::high_resolution_clock::now();                           // gets the time before the execution of sortfunction
   (*sortFunction)(arr);                                              // execution of the function
@@ -39,4 +39,27 @@ vector<int> returnVector(int i)
     arr.push_back(val);
   }
   return arr;
+}
+
+float WriteFile(int i)
+{
+
+  int randomSize[] = {
+      17254,
+      31670,
+      27150,
+      54700,
+      21933,
+      14881,
+      62040,
+      85620,
+      24150,
+      15371};
+  return randomSize[i];
+}
+
+void result(string func, float inputSize, float timetaken)
+{
+  fstream file("result.txt", ios::app);
+  file << "for input size: " << inputSize << " " << func << " takes time: " << timetaken << " milliseconds\n";
 }

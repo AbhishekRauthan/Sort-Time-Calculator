@@ -1,19 +1,10 @@
-# This is My C++ project
+# Sort Time Calculator
 
-# What is this project about?
+## this project is to calculate the time taken by various sorting algorithms like heapsort, insertion sort etc and store them in a text file named result.
 
-## This project is to record, analyse and develop my programming and logical skills using C++ and to contain all the algorithms that a programmer may need. also to add some functionality to it, their is a main file that calculate the time taken by an algorithm. and to execute it write the following command:
- `g++ ./sortalgo/sortalgo.hpp ./sortalgo/heapsort.cpp ./sortalgo/insertionsort.cpp ../misc/misc.hpp ../misc/misc.cpp  main.cpp`
+## folder structure:
+### there are 2 folders 
+  * ### sortalgo
+  * ### misc
 
-# This project contains the following folders :-
- 
-  * ## Algorithm
-  * ## Misc
-
-# Algorithm folder
-
-## This folder is storing various algorithms (specified by their folders) that are there in open (currently only sorting algorithms are present but much more would be added)
-
-# Misc folder
-
-## this folder contains many miscellaneous functions that may be required by a programmer but have no co-relation between them
+### sortalgo folder contains all the sorting algorithms whereas misc folder contains all the functions that we may need but as such do not have any coorelation.   
