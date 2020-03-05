@@ -12,9 +12,9 @@
 #include <chrono>
 
 void swap(int &, int &); // this is a simple swaping function
-float performanceOf(void (*sortFunction)(std::vector<int> &), std::vector<int> &arr);
+float performanceOf(void (*sortFunction)(std::vector<float> &), std::vector<float> &arr);
 // this is a performance function that returns time taken by the function pointer
-std::vector<int> returnVector(int);
+std::vector<float> returnVector(int);
 float WriteFile(int i);
 void result(std::string func, float inputSize, float timetaken);
 

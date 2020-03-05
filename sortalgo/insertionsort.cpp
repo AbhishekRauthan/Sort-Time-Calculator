@@ -1,6 +1,6 @@
 #include "sortalgo.hpp"
 
-int shiftVac(vector<int> &E, int index, int key)
+int shiftVac(vector<float> &E, int index, int key)
 {
   int vacant = index, xloc = 0;
   while (vacant > 0)
@@ -16,7 +16,7 @@ int shiftVac(vector<int> &E, int index, int key)
   return xloc;
 }
 
-void insertionSort(vector<int> &arr)
+void insertionSort(vector<float> &arr)
 {
   int index;
   for (index = 1; index < arr.size(); index++)

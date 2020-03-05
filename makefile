@@ -1,5 +1,5 @@
 
-result: main.o misc.o insertionsort.o heapsort.o
+result.exe: main.o misc.o insertionsort.o heapsort.o
 		g++ -c main.o misc.o insertionsort.o heapsort.o
 		
 main.o: main.cpp

@@ -1,4 +1,5 @@
 #include "sortalgo.hpp"
+#include "../misc/misc.hpp"
 #include <cmath>
 
 /**
@@ -27,14 +28,8 @@ int parentof(int index)
  * the following is a function to swap numbers
 */
 
-void swap(int &a, int &b)
-{
-  int temp = a;
-  a = b;
-  b = temp;
-}
 
-void maxHeapify(vector<int> &arr, int n, int index)
+void maxHeapify(vector<float> &arr, int n, int index)
 {
   int l = leftof(index), r = rightof(index), largest = index;
   if (l < n && arr[l] > arr[index])
@@ -52,7 +47,7 @@ void maxHeapify(vector<int> &arr, int n, int index)
   }
 }
 
-void builMaxHeap(vector<int> &arr)
+void builMaxHeap(vector<float> &arr)
 {
   int heapSize = arr.size();
   for (int i = floor(heapSize / 2); i >= 0; i--)
@@ -61,7 +56,7 @@ void builMaxHeap(vector<int> &arr)
   }
 }
 
-void heapSort(vector<int> &arr)
+void heapSort(vector<float> &arr)
 {
   builMaxHeap(arr);
   for (int i = arr.size() - 1; i >= 0; i--)
