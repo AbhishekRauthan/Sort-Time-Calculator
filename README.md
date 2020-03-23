@@ -1,6 +1,6 @@
 # Sort Time Calculator
 
-## this project is to calculate the time taken by various sorting algorithms like heapsort, insertion sort etc and produces the average time taken by each algorith.
+## this project is to calculate the time taken by various sorting algorithms like heapsort, insertion sort etc and produces the average time taken by each algorithm.
 
 ## folder structure:
 ### there are 2 folders 
